@@ -23,7 +23,7 @@ export default function Footer(){
                         <ul className="flex flex-col gap-2">
                             {usefulLinks.map((link, index) => (
                                
-                               <Link href={link.href} className="hover:text-green-500 capitalize"> <li> { link.name } </li> </Link>
+                               <Link key={index} href={link.href} className="hover:text-green-500 capitalize"> <li> { link.name } </li> </Link>
                             ))}
                         </ul>
                     </div>
@@ -32,7 +32,7 @@ export default function Footer(){
                         <ul className="flex flex-col gap-2">
                             {information.map((link, index) => (
                                
-                               <Link href={link.href} className="hover:text-green-500 capitalize"> <li> { link.name } </li> </Link>
+                               <Link key={index} href={link.href} className="hover:text-green-500 capitalize"> <li> { link.name } </li> </Link>
                             ))}
                         </ul>
                     </div>
